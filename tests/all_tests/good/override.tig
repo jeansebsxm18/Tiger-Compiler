@@ -1,0 +1,28 @@
+let
+  class C
+  {
+    var a := 0
+    method m() : int = self.a
+  }
+  class D extends C
+  {
+    var b := 9
+    /* Override C.m().  */
+    method m() : int = self.a + self.b
+  }
+  var d : D := new D
+  /* Valid upcast due to inclusion polymorphism.  */
+  var c : C := d
+in
+  c.a := 42;
+  /* Note that accessing `c.b' is not allowed, since `c' is
+     statically known as a `C', even though it is actually a `D'
+     at run time.  */
+  let
+    /* Polymorphic call.  */
+    var res := c.m()
+  in
+    print_int(res);
+    print("\n")
+  end
+end

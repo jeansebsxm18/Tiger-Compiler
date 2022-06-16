@@ -1,0 +1,8 @@
+/* error: redefinition: null; first definition */
+
+let
+  function null(i: int) : int    = i = 0
+  function null(s: string) : int = s = ""
+in
+  null("123") = null(123)
+end

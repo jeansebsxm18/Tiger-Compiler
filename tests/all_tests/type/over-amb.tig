@@ -1,0 +1,12 @@
+/* error : nil ambiguity calling `empty' */
+
+let
+  type foo = {}
+  function empty(f: foo) : int = f = nil
+  type bar = {}
+  function empty(b: bar) : int = b = nil
+in
+  empty(foo {});
+  empty(bar {});
+  empty(nil)
+end

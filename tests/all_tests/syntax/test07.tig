@@ -1,0 +1,18 @@
+function fibo(i : int) : int =
+let
+    var a := 1
+    var b := 1
+    var c := 0
+in
+    if i < 0 then i
+    else
+        if i = 0 then 0
+        else
+            if i = 0 | i = 1 | i = 2 then 1
+            else
+            (for j := to i do
+                (c := a + b; a := b; b := c);
+                c)
+end
+/* error : syntax error, unexpected to */
+

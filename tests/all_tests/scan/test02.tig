@@ -1,0 +1,9 @@
+/* error : unterminated comment */
+
+/* error : unterminated comment 
+
+let
+    var a := "This is an unterminated string
+in
+    print(a)
+end

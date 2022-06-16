@@ -1,0 +1,14 @@
+let
+  /* A block of types.  */
+  class A
+  {
+    /* Valid forward reference to B, defined in the same block
+       as the class enclosing this member.  */
+    var b := new B
+  }
+  type t = int
+  class B
+  {
+  }
+in
+end

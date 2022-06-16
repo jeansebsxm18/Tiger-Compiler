@@ -1,0 +1,7 @@
+/* error : invalid character */
+
+let
+    var a := "@²&é\"'(-è_çà)=$^ù*!:;,"
+in
+    print(a)
+end

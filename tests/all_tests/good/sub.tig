@@ -1,0 +1,5 @@
+let
+  function sub(i: int, j: int) :int = i + j
+in
+  sub(1, 2)
+end

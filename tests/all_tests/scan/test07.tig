@@ -1,0 +1,7 @@
+/* error : backslash octal not in string */
+
+let
+    var a := \123
+in
+    print(a)
+end

@@ -1,0 +1,7 @@
+/* error : too high int value */
+
+let
+    var a := 99999999999999999
+in
+    print(a)
+end

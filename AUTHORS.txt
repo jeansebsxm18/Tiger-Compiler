@@ -1,0 +1,4 @@
+Benjamin Guichard <benjamin.guichard@epita.fr>
+Jean-Sebastien Kersaint Tournebize <jean-sebastien.kersaint-tournebize@epita.fr>
+Dominique Zhang <dominique.zhang@epita.fr>
+Theo Bonzi <theo.bonzi@epita.fr>

@@ -1,0 +1,7 @@
+/* error : backslash n not in string */
+
+let
+    var a := \n
+in
+    print(a)
+end

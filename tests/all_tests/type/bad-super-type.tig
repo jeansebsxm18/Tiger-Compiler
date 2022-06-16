@@ -1,0 +1,14 @@
+/* error : recursive inheritance: A, B, class type expected, got: int */
+
+let
+  /* Mutually recursive inheritance.  */
+  type A = class extends A {}
+
+  /* Mutually recursive inheritance.  */
+  type B = class extends C {}
+  type C = class extends B {}
+
+  /* Class inherits from a non-class type.  */
+  type E = class extends int {}
+in
+end
